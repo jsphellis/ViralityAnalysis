@@ -1,0 +1,67 @@
+2024-05-11 00:41:45.057561: I tensorflow/core/platform/cpu_feature_guard.cc:194] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE3 SSE4.1 SSE4.2 AVX
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Starting training for 20 epochs.
+/usr/local/lib/python3.8/dist-packages/torch/nn/modules/conv.py:605: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv3d(
+/usr/local/lib/python3.8/dist-packages/torch/autograd/graph.py:744: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+Epoch 1: Train MSE: 0.23366661369800568, Train R2: -0.05321383476257324
+Validation MSE: 0.21430356800556183, Validation R2: -0.0020928382873535156
+Epoch duration: 9396.849140167236 seconds
+Epoch 2: Train MSE: 0.22328616678714752, Train R2: -0.006425619125366211
+Validation MSE: 0.21388578414916992, Validation R2: -0.00013935565948486328
+Epoch duration: 9835.398888349533 seconds
+Epoch 3: Train MSE: 0.22238750755786896, Train R2: -0.002375006675720215
+Validation MSE: 0.21465085446834564, Validation R2: -0.0037168264389038086
+Epoch duration: 10199.286436319351 seconds
+Epoch 4: Train MSE: 0.22243402898311615, Train R2: -0.002584695816040039
+Validation MSE: 0.21389158070087433, Validation R2: -0.00016641616821289062
+Epoch duration: 9962.761091709137 seconds
+Epoch 5: Train MSE: 0.22247782349586487, Train R2: -0.002782106399536133
+Validation MSE: 0.21470902860164642, Validation R2: -0.003988862037658691
+Epoch duration: 10005.876959085464 seconds
+Epoch 6: Train MSE: 0.2222544252872467, Train R2: -0.0017751455307006836
+Validation MSE: 0.21459552645683289, Validation R2: -0.0034580230712890625
+Epoch duration: 9591.69374704361 seconds
+Epoch 7: Train MSE: 0.22220556437969208, Train R2: -0.0015549659729003906
+Validation MSE: 0.2143569439649582, Validation R2: -0.0023424625396728516
+Epoch duration: 9705.600326061249 seconds
+Epoch 8: Train MSE: 0.22202922403812408, Train R2: -0.0007600784301757812
+Validation MSE: 0.21427811682224274, Validation R2: -0.001973867416381836
+Epoch duration: 10332.632260799408 seconds
+Epoch 9: Train MSE: 0.2217351794242859, Train R2: 0.0005652308464050293
+Validation MSE: 0.21438495814800262, Validation R2: -0.00247347354888916
+Epoch duration: 10047.716279268265 seconds
+Epoch 10: Train MSE: 0.2223181277513504, Train R2: -0.0020623207092285156
+Validation MSE: 0.2142888903617859, Validation R2: -0.0020242929458618164
+Epoch duration: 10033.967589616776 seconds
+Epoch 11: Train MSE: 0.2219865471124649, Train R2: -0.0005677938461303711
+Validation MSE: 0.21429431438446045, Validation R2: -0.002049565315246582
+Epoch duration: 9912.729484796524 seconds
+Epoch 12: Train MSE: 0.22203870117664337, Train R2: -0.0008028745651245117
+Validation MSE: 0.21429574489593506, Validation R2: -0.0020562410354614258
+Epoch duration: 10407.730132341385 seconds
+Epoch 13: Train MSE: 0.22205547988414764, Train R2: -0.000878453254699707
+Validation MSE: 0.21438618004322052, Validation R2: -0.0024791955947875977
+Epoch duration: 10277.815103769302 seconds
+Epoch 14: Train MSE: 0.22211922705173492, Train R2: -0.0011658668518066406
+Validation MSE: 0.21429193019866943, Validation R2: -0.0020384788513183594
+Epoch duration: 9617.053842067719 seconds
+Epoch 15: Train MSE: 0.22190694510936737, Train R2: -0.00020897388458251953
+Validation MSE: 0.21429327130317688, Validation R2: -0.002044677734375
+Epoch duration: 9862.605916023254 seconds
+Epoch 16: Train MSE: 0.22218555212020874, Train R2: -0.0014647245407104492
+Validation MSE: 0.21428820490837097, Validation R2: -0.0020210742950439453
+Epoch duration: 9773.813242673874 seconds
+Epoch 17: Train MSE: 0.2219480276107788, Train R2: -0.0003942251205444336
+Validation MSE: 0.21428978443145752, Validation R2: -0.0020284652709960938
+Epoch duration: 10272.49662566185 seconds
+Epoch 18: Train MSE: 0.22197987139225006, Train R2: -0.0005377531051635742
+Validation MSE: 0.2142930030822754, Validation R2: -0.002043485641479492
+Epoch duration: 10396.572737932205 seconds
+Epoch 19: Train MSE: 0.22197800874710083, Train R2: -0.0005292892456054688
+Validation MSE: 0.21429571509361267, Validation R2: -0.002056121826171875
+Epoch duration: 11602.74186873436 seconds
+Epoch 20: Train MSE: 0.22226683795452118, Train R2: -0.0018311738967895508
+Validation MSE: 0.21429023146629333, Validation R2: -0.002030491828918457
+Epoch duration: 10177.211277246475 seconds

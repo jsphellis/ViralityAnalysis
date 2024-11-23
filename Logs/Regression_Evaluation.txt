@@ -1,0 +1,25 @@
+/usr/local/lib/python3.8/dist-packages/torch/nn/modules/conv.py:605: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv3d(
+Number of actuals: 1123, predictions: 1123, video paths: 1123
+MSE: 0.02083175629377365, RMSE: 0.14433211088180542, MAE: 0.10081552714109421
+MAPE: 1319.3299293518066%
+Best 3 Videos (smallest prediction error):
+Video Path: ./TikTokVideos/rizzseok_7352854980799253767.mp4, Actual: 0.5753859877586365, Predicted: 0.575533926486969
+Video Path: ./TikTokVideos/notmitchwithonel_7326561019390610695.mp4, Actual: 0.5753473043441772, Predicted: 0.575533926486969
+Video Path: ./TikTokVideos/user5415000281094_7335125772425809198.mp4, Actual: 0.576963484287262, Predicted: 0.575533926486969
+Worst 3 Videos (largest prediction error):
+Video Path: ./TikTokVideos/luichi1621_7360526214882135302.mp4, Actual: 0.03092915005981922, Predicted: 0.575533926486969
+Video Path: ./TikTokVideos/luichi1621_7360526288819375365.mp4, Actual: 0.027140915393829346, Predicted: 0.575533926486969
+Video Path: ./TikTokVideos/keyadas088_7357260671043538184.mp4, Actual: 3.998462125309743e-05, Predicted: 0.575533926486969
+Traceback (most recent call last):
+  File "Evaluation.py", line 229, in <module>
+    regression_evaluator.evaluate()
+  File "Evaluation.py", line 220, in evaluate
+    self.plot_video_frames(sorted_indices[:3].tolist() + sorted_indices[-3:].tolist(), 
+  File "Evaluation.py", line 183, in plot_video_frames
+    frame = self.get_tenth_frame(path)
+  File "Evaluation.py", line 173, in get_tenth_frame
+    vid, _, _ = read_video(video_path, pts_unit='sec')
+  File "/usr/local/lib/python3.8/dist-packages/torchvision/io/video.py", line 271, in read_video
+    raise RuntimeError(f"File not found: {filename}")
+RuntimeError: File not found: 553
